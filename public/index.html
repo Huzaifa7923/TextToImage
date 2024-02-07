@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Open AI Image Generator</h1>
+        <a class="link" href="https://beta.openai.com/docs" target="_blank"><h1>Open API Docs</h1></a>
+    </nav>
+    <main>
+        <section class="showcase">
+            <form id="image-form">
+                <h1>Describe an image</h1>
+                <div class="form-control">
+                    <input type="text" placeholder="Enter description" id="prompt">
+                </div>
+                <div class="form-control">
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected >Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Generate</button>
+            </form>
+        </section>
+
+        <section class="image">
+            <div class="image-container">
+                <h2 class="msg"></h2>
+                <img src="" alt="" id="image"/>
+            </div>
+        </section>
+      
+        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </main>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
